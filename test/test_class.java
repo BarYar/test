@@ -28,6 +28,8 @@ public class test_class
     public int sampleMethod(int y)
     {
         // put your code here
+        System.out.println("hey");
         return x + y;
+        
     }
 }
