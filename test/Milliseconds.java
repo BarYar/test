@@ -1,10 +1,17 @@
 import java.util.Scanner;
+/**
+ * Name: Bar Yaron      
+ * Date:16/10/2021 
+ * The Milliseconds class converts the user input in milliseconds to Days, Hours, Minutes and Seconds.
+ */
 public class Milliseconds
 {
+    /**
+     * Gets milliseconds input and convert it to Days, Hours, Minutes and Seconds according to this format:
+     * d_days_h:m:s_hours 
+     */
     public static void main (String [] args)
     {
-        // ...מתאימים קבועים להופיע צריכים כאן
-        // 1 seconds =  1000 ms 1 minutes = 60,000 1 hours = 1,200,000
         final long SECONDS, MINUTES, HOURS, DAYS;
         Scanner scan = new Scanner (System.in);
         System.out.println ("This program reads an integer which " +
@@ -21,7 +28,5 @@ public class Milliseconds
         SECONDS = ms / 1000;
         System.out.println( DAYS + " days " + HOURS+ ":" + MINUTES + ":" + SECONDS +" hours");
 
-
-
-    }
-}
+    }//main
+}//Milliseconds class
