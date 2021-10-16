@@ -36,6 +36,8 @@ public class test_class
     public static void main(String[]args)
     {
         System.out.println("heyy");
+        int a = 5;
+        System.out.println(a);
     }
 
 }
