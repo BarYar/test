@@ -38,6 +38,9 @@ public class test_class
         System.out.println("heyy");
         int a = 5;
         System.out.println(a);
+        System.out.println(a);
+        System.out.println(!true);
+        System.out.println(false || true || false);
     }
 
 }

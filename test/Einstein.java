@@ -1,7 +1,6 @@
 import java.util.Scanner;
 /**
  * Name: Bar Yaron      
- * Date:16/10/2021 
  * The Einstein class prints if the difference between the user input and the reverse number of the user input,
  * plus the reverse of the difference equals 1089 (Einstein puzzle).
  */
@@ -16,10 +15,10 @@ public class Einstein
      */
     public static void main(String[]args)
     {
-        long reversedNum, hundreds, tens, units, diff, reversedDiff;
+        int reversedNum, hundreds, tens, units, diff, reversedDiff;
         System.out.println("Welcome to the Einstein magic game. \nPlease enter a 3 digit positive number whose first and last digits are different:");
         Scanner scan = new Scanner (System.in);
-        long num = scan.nextLong();
+        long num = scan.nextInt();
         // Checks if the input is a 3 digit positive number
         if ((num > 999) || (num < 100))
             System.out.println("The number you entered is not a 3 digit positive number");
