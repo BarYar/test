@@ -1,7 +1,6 @@
 import java.util.Scanner;
 /**
  * Name: Bar Yaron      
- * Date:16/10/2021 
  * The Milliseconds class converts the user input in milliseconds to Days, Hours, Minutes and Seconds.
  */
 public class Milliseconds
