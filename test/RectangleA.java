@@ -2,7 +2,7 @@
 /**
  * Name: Bar Yaron
  * The RectangleA class represents a Rectangle
- * This class has 2 instance variables int width, int height and pointSW.
+ * This class has 2 instance variables int width, int height and Point pointSW.
  */
 public class RectangleA {
 
