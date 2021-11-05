@@ -11,21 +11,23 @@ public class Milliseconds
      */
     public static void main (String [] args)
     {
-        final long SECONDS, MINUTES, HOURS, DAYS;
-        Scanner scan = new Scanner (System.in);
+        final long MS_IN_SECONDS = 1000, MS_IN_MINUTES = MS_IN_SECONDS * 60, MS_IN_HOURS = MS_IN_MINUTES * 60, MS_IN_DAYS = MS_IN_HOURS * 24;
+        long seconds, minutes, hours, days;
         System.out.println ("This program reads an integer which " +
                 "represents Milliseconds and converts it to days, " +
                 "hours, minutes and seconds. ");
         System.out.println ("Please enter the number of Milliseconds");
+        Scanner scan = new Scanner (System.in);
         long ms = scan.nextLong();
-        DAYS = ms / 86400000;
-        ms = ms - DAYS * 86400000;
-        HOURS = ms / 3600000;
-        ms = ms - HOURS * 3600000;
-        MINUTES = ms / 60000;
-        ms = ms - MINUTES * 60000;
-        SECONDS = ms / 1000;
-        System.out.println( DAYS + " days " + HOURS+ ":" + MINUTES + ":" + SECONDS +" hours");
+        scan.close();
+        days = ms / MS_IN_DAYS;
+        ms = ms - days * MS_IN_DAYS;
+        hours = ms / MS_IN_HOURS;
+        ms = ms - hours * MS_IN_HOURS;
+        minutes = ms / MS_IN_MINUTES;
+        ms = ms - minutes * MS_IN_MINUTES;
+        seconds = ms / MS_IN_SECONDS;
+        System.out.println(days + " days " + hours+ ":" + minutes + ":" + seconds +" hours");
 
     }//main
 }//Milliseconds class

@@ -1,6 +1,6 @@
 /**
  * Name: Bar Yaron
- * The Square3x3 class represents a 2 dimensional array
+ * The Square3x3 class represents a 2 dimensional array of ints with size of 3x3
  * This class has 1 instance variable
  */
 public class Square3x3 {

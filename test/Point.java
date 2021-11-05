@@ -1,7 +1,7 @@
 /**
  * Name: Bar Yaron
  * The point class represents point in a cartesian system.
- * This class has 2 instance variables x and y.
+ * This class has 2 instance variables int x and int y.
  */
 public class Point{
 
